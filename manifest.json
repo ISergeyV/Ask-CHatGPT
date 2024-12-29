@@ -1,0 +1,28 @@
+{
+  "name": "Ask ChatGPT",
+  "version": "1.0",
+  "description": "Выделите текст на странице и отправьте его в ChatGPT",
+  "manifest_version": 3,
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "scripting",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "Отправить в ChatGPT"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
