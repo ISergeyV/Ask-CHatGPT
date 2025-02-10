@@ -44,13 +44,12 @@ async function openChatWithText(text) {
 }
 
 function insertTextIntoChatGPT(selectedText) {
-    const textarea = document.querySelector("textarea");
+    let editableDiv = document.querySelector("div#prompt-textarea");
+editableDiv.focus();
+
 
     if (textarea) {
-        textarea.value = selectedText;
-        const inputEvent = new Event('input', {bubbles: true});
-        textarea.dispatchEvent(inputEvent);
-        textarea.focus();
+        document.execCommand("insertText", false, selectedText);
     } else {
         alert("Не удалось найти поле ввода на странице ChatGPT.");
     }
