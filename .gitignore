@@ -1,0 +1,81 @@
+# Chrome Extension specific files
+*.crx
+*.pem
+*.zip
+*.crx.zip
+web-ext-artifacts/
+
+# Build and distribution
+dist/
+build/
+*.map
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+.cache/
+
+# Testing
+coverage/
+.nyc_output/
+*.test.js.snap
+
+# Documentation build
+docs/_build/
+
+# Optional: Uncomment if you use TypeScript
+# *.tsbuildinfo
+
+# Optional: Uncomment if you use webpack
+# webpack-stats.json
+
+# Optional: Uncomment if you use ESLint cache
+# .eslintcache
+
+# Optional: Uncomment if you use Prettier cache
+# .prettiercache
+
+# Project specific
+IMPROVEMENT_PLAN.md
+COMMIT_MESSAGE.txt

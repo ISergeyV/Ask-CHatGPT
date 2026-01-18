@@ -1,1 +1,1 @@
-// Пока пусто, но при необходимости здесь можно будет добавить логику для DOM страницы
+// Currently empty, but DOM page logic can be added here if needed
